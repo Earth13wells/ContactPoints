@@ -40,6 +40,7 @@ mask_crow = cv2.inRange(hsv, lower_range_crow, upper_range_crow)
 out_img = cv2.add(mask_dial,mask_crow)
 image[0:rows, 0:cols ] = out_img
 
+
 #cv2.imshow('image', img)
 cv2.imshow('mask', mask)
 cv2.imshow('out', out_img)
